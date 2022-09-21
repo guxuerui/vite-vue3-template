@@ -2,9 +2,8 @@
 </script>
 
 <template>
-  <AnimateCursor />
+  <div>Test page of vue</div>
 </template>
 
 <style scoped>
-
 </style>

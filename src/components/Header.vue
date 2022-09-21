@@ -1,41 +1,8 @@
 <script setup lang="ts">
-const links = ref([
-  {
-    name: 'Vue',
-    fileName: 'list',
-    folder: 'vue',
-  },
-  {
-    name: 'Js',
-    fileName: 'list',
-    folder: 'js',
-  },
-  {
-    name: 'Css',
-    fileName: 'list',
-    folder: 'css',
-  },
-  {
-    name: 'Note',
-    fileName: 'list',
-    folder: 'note',
-  },
-  {
-    name: 'Game',
-    fileName: 'list',
-    folder: 'game',
-  },
-])
 // is or not darkMode
 const isDarkMode = computed(() => {
   return isDark.value
 })
-
-const router = useRouter()
-const jumpPage = (folder: string, name: string) => {
-  if (folder && name)
-    router.push(`/${folder}/${encodeURIComponent(name)}`)
-}
 </script>
 
 <template>
@@ -46,14 +13,6 @@ const jumpPage = (folder: string, name: string) => {
       </a>
     </div>
     <div style="padding-top: 0.3rem">
-      <a
-        v-for="(item, i) in links"
-        :key="i"
-        class="mr-3 c-gray-500 hover:c-black dark:hover:c-white cursor-pointer"
-        @click="jumpPage(item.folder, item.fileName)"
-      >
-        {{ item.name }}
-      </a>
       <button
         class="icon-btn !outline-none vertical-sub c-gray-800 dark:c-gray-400 hover:c-black dark:hover:c-white"
         @click="toggleDark()"

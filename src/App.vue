@@ -7,17 +7,14 @@ const routes = useRoute()
   <main class="main" font-sans p="x-4 y-5" text="center gray-700 dark:gray-200">
     <router-view />
     <Footer v-if="routes.fullPath !== '/'" />
-    <div mt-4>
-      Qishi © 2022
-    </div>
   </main>
 </template>
 
 <style scoped>
   .main {
+    font-size: 1rem;
+    margin: 0 auto;
     max-width: 65ch;
     text-align: left;
-    margin: 0 auto;
-    font-size: 1rem;
   }
 </style>
