@@ -16,6 +16,7 @@
 - [Typescript](https://www.typescriptlang.org/docs/)
 - Automated Deployment [Netlify](https://www.netlify.com/)
 - [vite-plugin-vue-markdown](https://github.com/mdit-vue/vite-plugin-vue-markdown) - Render markdown file vith vite
+- [Eslint](https://github.com/antfu/eslint-config) - use @antfu/eslint-config
 
 ### Clone to local
 
