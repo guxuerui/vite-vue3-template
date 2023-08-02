@@ -21,8 +21,13 @@
 ### Clone to local
 
 ```bash
-1. npx degit guxuerui/vite-vue3-template my-app or
-   git clone git@github.com:guxuerui/vite-vue3-template.git
-2. cd my-app
-3. pnpm i # If not pnpm, run: npm install -g pnpm
+npx degit guxuerui/vite-vue3-template my-app
+```
+
+### Use
+
+```bash
+1. cd my-app
+2. pnpm i # If not pnpm, run: npm install -g pnpm
+3. pnpm run dev
 ```
