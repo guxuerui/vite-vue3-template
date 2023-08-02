@@ -20,6 +20,10 @@ export default defineConfig({
     Vue({
       reactivityTransform: true,
       include: [/\.vue$/, /\.md$/],
+      script: {
+        defineModel: true,
+        propsDestructure: true,
+      },
     }),
 
     // https://github.com/hannoeru/vite-plugin-pages
